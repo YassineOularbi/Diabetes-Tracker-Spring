@@ -12,6 +12,11 @@
     <list default="true" id="97ce2031-7033-4b4e-8954-c94a775eff77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/BRIEF-WEATHER-APP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/src/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controller/DiabetesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/entity/Diabetes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/DiabetesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/DiabetesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Magerama-cinema-BM/src/main/java/jee/javapack/servlets/CinemaHome.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../QUIZ-JAVA/QUIZ-JAVA.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../STUDENT-MANAGEMENT-SPRINGBOOT-ANGULAR" afterDir="false" />
@@ -104,7 +109,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 8.5.100.executor": "Run",
     "Tomcat Server.hello_world.jsp.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "back-end",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/Desktop/ENAA-CHALLENGES-WORKSHOP-PROJECT/BRIEFS-ENAA-SIMPLONE/Diabetes-Tracker-Spring",
@@ -233,7 +238,7 @@
       <workItem from="1715677856933" duration="24540000" />
       <workItem from="1716479034244" duration="2950000" />
       <workItem from="1716504757203" duration="3544000" />
-      <workItem from="1717405633600" duration="3373000" />
+      <workItem from="1717405633600" duration="3811000" />
     </task>
     <servers />
   </component>
