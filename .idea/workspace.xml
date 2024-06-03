@@ -12,27 +12,6 @@
     <list default="true" id="97ce2031-7033-4b4e-8954-c94a775eff77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/BRIEF-WEATHER-APP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/src/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvc5-springdatajpa2-jsp-mysql-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/PersistenceJPAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controller/DiabetesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/entity/Diabetes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/repository/DiabetesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/DiabetesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/DiabetesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Magerama-cinema-BM/src/main/java/jee/javapack/servlets/CinemaHome.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../QUIZ-JAVA/QUIZ-JAVA.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../STUDENT-MANAGEMENT-SPRINGBOOT-ANGULAR" afterDir="false" />
@@ -70,7 +49,7 @@
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/jsp/update-student-form.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +234,7 @@
       <workItem from="1715677856933" duration="24540000" />
       <workItem from="1716479034244" duration="2950000" />
       <workItem from="1716504757203" duration="3544000" />
-      <workItem from="1717405633600" duration="2592000" />
+      <workItem from="1717405633600" duration="2907000" />
     </task>
     <servers />
   </component>
@@ -264,5 +243,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/spring/controller/DiabetesController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
