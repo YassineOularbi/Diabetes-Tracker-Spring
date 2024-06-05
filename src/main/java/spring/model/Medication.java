@@ -5,6 +5,7 @@ import spring.enums.MealPhaseType;
 import spring.enums.MedicationType;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Medication {
@@ -19,25 +20,29 @@ public class Medication {
     @Enumerated(EnumType.STRING)
     private MealPhase phase;
     private String picture;
+    @ManyToMany(mappedBy = "medication")
+    private List<Measure> measures;
 
     public Medication() {
     }
 
-    public Medication(String name, MedicationType type, MealPhaseType phaseType, MealPhase phase, String picture) {
+    public Medication(String name, MedicationType type, MealPhaseType phaseType, MealPhase phase, String picture, List<Measure> measures) {
         this.name = name;
         this.type = type;
         this.phaseType = phaseType;
         this.phase = phase;
         this.picture = picture;
+        this.measures = measures;
     }
 
-    public Medication(Long id, String name, MedicationType type, MealPhaseType phaseType, MealPhase phase, String picture) {
+    public Medication(Long id, String name, MedicationType type, MealPhaseType phaseType, MealPhase phase, String picture, List<Measure> measures) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.phaseType = phaseType;
         this.phase = phase;
         this.picture = picture;
+        this.measures = measures;
     }
 
     public Long getId() {
@@ -88,6 +93,14 @@ public class Medication {
         this.picture = picture;
     }
 
+    public List<Measure> getMeasures() {
+        return measures;
+    }
+
+    public void setMeasures(List<Measure> measures) {
+        this.measures = measures;
+    }
+
     @Override
     public String toString() {
         return "Medication{" +
@@ -97,6 +110,7 @@ public class Medication {
                 ", phaseType=" + phaseType +
                 ", phase=" + phase +
                 ", picture='" + picture + '\'' +
+                ", measures=" + measures +
                 '}';
     }
 }

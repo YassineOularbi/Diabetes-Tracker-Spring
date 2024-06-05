@@ -1,9 +1,7 @@
 package spring.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Recipe {
@@ -11,17 +9,26 @@ public class Recipe {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
+    @OneToOne
+    @JoinColumn(name = "meal_id")
+    private Meal meal;
+    @ManyToMany(mappedBy = "recipe")
+    private List<Ingredient> ingredients;
 
     public Recipe() {
     }
 
-    public Recipe(String description) {
+    public Recipe(String description, Meal meal, List<Ingredient> ingredients) {
         this.description = description;
+        this.meal = meal;
+        this.ingredients = ingredients;
     }
 
-    public Recipe(Long id, String description) {
+    public Recipe(Long id, String description, Meal meal, List<Ingredient> ingredients) {
         this.id = id;
         this.description = description;
+        this.meal = meal;
+        this.ingredients = ingredients;
     }
 
     public Long getId() {
@@ -40,11 +47,29 @@ public class Recipe {
         this.description = description;
     }
 
+    public Meal getMeal() {
+        return meal;
+    }
+
+    public void setMeal(Meal meal) {
+        this.meal = meal;
+    }
+
+    public List<Ingredient> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(List<Ingredient> ingredients) {
+        this.ingredients = ingredients;
+    }
+
     @Override
     public String toString() {
         return "Recipe{" +
                 "id=" + id +
                 ", description='" + description + '\'' +
+                ", meal=" + meal +
+                ", ingredients=" + ingredients +
                 '}';
     }
 }

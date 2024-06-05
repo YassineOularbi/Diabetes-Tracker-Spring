@@ -70,7 +70,16 @@
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/jsp/update-student-form.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Diabetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Diabetic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Exercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Meal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Measure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Nutrient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Nutrient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Recipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
