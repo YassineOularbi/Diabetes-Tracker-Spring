@@ -12,6 +12,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
+
 
 @Controller
 @RequestMapping("/")
@@ -28,7 +30,7 @@ public class DiabetesController {
         Diabetes diabetes = new Diabetes();
         theModel.addAttribute("diabetes", diabetes);
         List<Diabetes> diabetesList = diabetesService.getAll();
-        theModel.addAttribute("students", diabetesList);
+        theModel.addAttribute("diabetesList", diabetesList);
         return "hello";
     }
 
@@ -48,7 +50,7 @@ public class DiabetesController {
 
     @GetMapping("/remove")
     public String delete(@RequestParam("id") Long id){
-        diabetesService.delete(Id);
+        diabetesService.delete(id);
         return "redirect:/";
     }
 
