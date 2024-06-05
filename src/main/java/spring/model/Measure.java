@@ -11,6 +11,7 @@ import java.sql.Time;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Measure {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
