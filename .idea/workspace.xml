@@ -12,11 +12,9 @@
     <list default="true" id="97ce2031-7033-4b4e-8954-c94a775eff77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/BRIEF-WEATHER-APP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/src/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controller/DiabetesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/entity/Diabetes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/DiabetesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/service/DiabetesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/assets/dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/assets/light.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Magerama-cinema-BM/src/main/java/jee/javapack/servlets/CinemaHome.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../QUIZ-JAVA/QUIZ-JAVA.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../STUDENT-MANAGEMENT-SPRINGBOOT-ANGULAR" afterDir="false" />
@@ -34,6 +32,26 @@
       <change afterPath="$PROJECT_DIR$/../student-management/src/main/java/com/springboot/studentmanagement/StudentManagementApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../student-management/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../student-management/src/test/java/com/springboot/studentmanagement/StudentManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/Diabetes-Tracker-Spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/Beans/Diabetes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/Config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/Config/PersistenceJPAConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/Config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/DAO/DiabetesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/DAO/DiabetesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/Repository/DiabetesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/java/com/Servlet/DiabetesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Diabetes-Tracker-Spring/src/main/webapp/WEB-INF/jsp/diabetes.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/.idea/encodings.xml" afterDir="false" />
@@ -54,6 +72,15 @@
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/jsp/update-student-form.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/DiabetesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/DiabetesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/repository/DiabetesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/repository/DiabetesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/controller/DiabetesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/controller/DiabetesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/DiabetesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/repository/DiabetesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/controller/DiabetesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/controller/DiabetesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/DiabetesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/DiabetesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/hello.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +139,7 @@
     "git-widget-placeholder": "back-end",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/ENAA-CHALLENGES-WORKSHOP-PROJECT/BRIEFS-ENAA-SIMPLONE/Diabetes-Tracker-Spring",
+    "last_opened_file_path": "C:/Users/user/Downloads/Diabetes__Tracker/Diabetes__Tracker",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -238,7 +265,7 @@
       <workItem from="1715677856933" duration="24540000" />
       <workItem from="1716479034244" duration="2950000" />
       <workItem from="1716504757203" duration="3544000" />
-      <workItem from="1717405633600" duration="3811000" />
+      <workItem from="1717405633600" duration="20133000" />
     </task>
     <servers />
   </component>
