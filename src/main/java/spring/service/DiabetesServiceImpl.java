@@ -2,7 +2,7 @@ package spring.service;
 
 import spring.exception.ResourceNotFoundException;
 import spring.repository.DiabetesRepository;
-import spring.entity.Diabetes;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

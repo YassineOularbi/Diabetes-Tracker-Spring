@@ -1,6 +1,5 @@
 package spring.service;
 
-import spring.entity.Diabetes;
 import spring.exception.ResourceNotFoundException;
 
 import java.util.List;

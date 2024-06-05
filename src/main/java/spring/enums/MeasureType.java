@@ -4,5 +4,6 @@ public enum MeasureType {
     Glycemia,
     BloodKetone,
     UrinaryKetone,
-    A1C
+    A1C,
+    Weight
 }
