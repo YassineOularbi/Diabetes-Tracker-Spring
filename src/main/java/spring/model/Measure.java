@@ -5,17 +5,25 @@ import spring.enums.MealPhaseType;
 import spring.enums.MeasureType;
 import spring.enums.Status;
 
+import javax.persistence.*;
 import java.sql.Date;
 import java.sql.Time;
 
+@Entity
 public class Measure {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Double value;
+    @Enumerated(EnumType.STRING)
     private MealPhaseType phaseType;
+    @Enumerated(EnumType.STRING)
     private MealPhase phase;
     private Date date;
     private Time hour;
+    @Enumerated(EnumType.STRING)
     private MeasureType type;
+    @Enumerated(EnumType.STRING)
     private Status status;
 
     public Measure() {

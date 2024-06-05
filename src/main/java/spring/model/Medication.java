@@ -4,11 +4,19 @@ import spring.enums.MealPhase;
 import spring.enums.MealPhaseType;
 import spring.enums.MedicationType;
 
+import javax.persistence.*;
+
+@Entity
 public class Medication {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private MedicationType type;
+    @Enumerated(EnumType.STRING)
     private MealPhaseType phaseType;
+    @Enumerated(EnumType.STRING)
     private MealPhase phase;
     private String picture;
 

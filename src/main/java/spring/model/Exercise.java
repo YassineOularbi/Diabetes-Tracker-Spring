@@ -2,9 +2,15 @@ package spring.model;
 
 import spring.enums.ExerciseType;
 
+import javax.persistence.*;
+
+@Entity
 public class Exercise {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private ExerciseType type;
     private String duration;
     private String description;

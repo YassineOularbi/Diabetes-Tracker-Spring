@@ -2,9 +2,15 @@ package spring.model;
 
 import spring.enums.MealPhase;
 
+import javax.persistence.*;
+
+@Entity
 public class Meal {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private MealPhase phase;
     private String picture;
 

@@ -2,9 +2,15 @@ package spring.model;
 
 import spring.enums.DoctorType;
 
+import javax.persistence.*;
+
+@Entity
 public class Doctor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private DoctorType jobType;
     private String number;
     private String mail;

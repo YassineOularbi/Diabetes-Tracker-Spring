@@ -2,9 +2,15 @@ package spring.model;
 
 import spring.enums.DiabeticType;
 
+import javax.persistence.*;
+
+@Entity
 public class Diabetic {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private DiabeticType type;
     private Double weight;
     private Integer age;

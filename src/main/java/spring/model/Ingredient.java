@@ -2,11 +2,17 @@ package spring.model;
 
 import spring.enums.IngredientType;
 
+import javax.persistence.*;
+
+@Entity
 public class Ingredient {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private Double amount;
     private String picture;
+    @Enumerated(EnumType.STRING)
     private IngredientType type;
 
     public Ingredient() {
