@@ -2,32 +2,44 @@ package spring.model;
 
 import spring.enums.ExerciseType;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Exercise {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private ExerciseType type;
     private String duration;
     private String description;
     private String picture;
+    @ManyToMany(mappedBy = "exercise")
+    private List<Measure> measures;
 
     public Exercise() {
     }
 
-    public Exercise(String name, ExerciseType type, String duration, String description, String picture) {
+    public Exercise(String name, ExerciseType type, String duration, String description, String picture, List<Measure> measures) {
         this.name = name;
         this.type = type;
         this.duration = duration;
         this.description = description;
         this.picture = picture;
+        this.measures = measures;
     }
 
-    public Exercise(Long id, String name, ExerciseType type, String duration, String description, String picture) {
+    public Exercise(Long id, String name, ExerciseType type, String duration, String description, String picture, List<Measure> measures) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.duration = duration;
         this.description = description;
         this.picture = picture;
+        this.measures = measures;
     }
 
     public Long getId() {
@@ -78,6 +90,14 @@ public class Exercise {
         this.picture = picture;
     }
 
+    public List<Measure> getMeasures() {
+        return measures;
+    }
+
+    public void setMeasures(List<Measure> measures) {
+        this.measures = measures;
+    }
+
     @Override
     public String toString() {
         return "Exercise{" +
@@ -87,6 +107,7 @@ public class Exercise {
                 ", duration='" + duration + '\'' +
                 ", description='" + description + '\'' +
                 ", picture='" + picture + '\'' +
+                ", measures=" + measures +
                 '}';
     }
 }

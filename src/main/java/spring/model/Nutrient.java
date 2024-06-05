@@ -1,6 +1,11 @@
 package spring.model;
 
+import javax.persistence.*;
+
+@Entity
 public class Nutrient {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Double water;
     private Double calorie;
@@ -10,11 +15,14 @@ public class Nutrient {
     private Double carb;
     private String mineral;
     private String vitamin;
+    @OneToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "ingredient_id")
+    private Ingredient ingredient;
 
     public Nutrient() {
     }
 
-    public Nutrient(Double water, Double calorie, Double protein, Double fat, Double glucose, Double carb, String mineral, String vitamin) {
+    public Nutrient(Double water, Double calorie, Double protein, Double fat, Double glucose, Double carb, String mineral, String vitamin, Ingredient ingredient) {
         this.water = water;
         this.calorie = calorie;
         this.protein = protein;
@@ -23,9 +31,10 @@ public class Nutrient {
         this.carb = carb;
         this.mineral = mineral;
         this.vitamin = vitamin;
+        this.ingredient = ingredient;
     }
 
-    public Nutrient(Long id, Double water, Double calorie, Double protein, Double fat, Double glucose, Double carb, String mineral, String vitamin) {
+    public Nutrient(Long id, Double water, Double calorie, Double protein, Double fat, Double glucose, Double carb, String mineral, String vitamin, Ingredient ingredient) {
         this.id = id;
         this.water = water;
         this.calorie = calorie;
@@ -35,6 +44,7 @@ public class Nutrient {
         this.carb = carb;
         this.mineral = mineral;
         this.vitamin = vitamin;
+        this.ingredient = ingredient;
     }
 
     public Long getId() {
@@ -109,6 +119,14 @@ public class Nutrient {
         this.vitamin = vitamin;
     }
 
+    public Ingredient getIngredient() {
+        return ingredient;
+    }
+
+    public void setIngredient(Ingredient ingredient) {
+        this.ingredient = ingredient;
+    }
+
     @Override
     public String toString() {
         return "Nutrient{" +
@@ -121,6 +139,7 @@ public class Nutrient {
                 ", carb=" + carb +
                 ", mineral='" + mineral + '\'' +
                 ", vitamin='" + vitamin + '\'' +
+                ", ingredient=" + ingredient +
                 '}';
     }
 }

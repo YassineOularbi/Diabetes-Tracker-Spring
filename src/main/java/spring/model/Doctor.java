@@ -2,32 +2,43 @@ package spring.model;
 
 import spring.enums.DoctorType;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
 public class Doctor {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private DoctorType jobType;
     private String number;
     private String mail;
     private String picture;
+    @ManyToMany(mappedBy = "doctor")
+    private List<Diabetic> diabetics;
 
     public Doctor() {
     }
 
-    public Doctor(String name, DoctorType jobType, String number, String mail, String picture) {
+    public Doctor(String name, DoctorType jobType, String number, String mail, String picture, List<Diabetic> diabetics) {
         this.name = name;
         this.jobType = jobType;
         this.number = number;
         this.mail = mail;
         this.picture = picture;
+        this.diabetics = diabetics;
     }
 
-    public Doctor(Long id, String name, DoctorType jobType, String number, String mail, String picture) {
+    public Doctor(Long id, String name, DoctorType jobType, String number, String mail, String picture, List<Diabetic> diabetics) {
         this.id = id;
         this.name = name;
         this.jobType = jobType;
         this.number = number;
         this.mail = mail;
         this.picture = picture;
+        this.diabetics = diabetics;
     }
 
     public Long getId() {
@@ -78,6 +89,14 @@ public class Doctor {
         this.picture = picture;
     }
 
+    public List<Diabetic> getDiabetics() {
+        return diabetics;
+    }
+
+    public void setDiabetics(List<Diabetic> diabetics) {
+        this.diabetics = diabetics;
+    }
+
     @Override
     public String toString() {
         return "Doctor{" +
@@ -87,6 +106,7 @@ public class Doctor {
                 ", number='" + number + '\'' +
                 ", mail='" + mail + '\'' +
                 ", picture='" + picture + '\'' +
+                ", diabetics=" + diabetics +
                 '}';
     }
 }

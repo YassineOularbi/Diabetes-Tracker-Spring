@@ -2,29 +2,46 @@ package spring.model;
 
 import spring.enums.IngredientType;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Ingredient {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private Double amount;
     private String picture;
+    @Enumerated(EnumType.STRING)
     private IngredientType type;
+    @ManyToMany(mappedBy = "ingredient")
+    private List<Recipe> recipes;
+    @OneToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "nutrient_id")
+    private Nutrient nutrient;
 
     public Ingredient() {
     }
 
-    public Ingredient(String name, Double amount, String picture, IngredientType type) {
+    public Ingredient(String name, Double amount, String picture, IngredientType type, List<Recipe> recipes, Nutrient nutrient) {
         this.name = name;
         this.amount = amount;
         this.picture = picture;
         this.type = type;
+        this.recipes = recipes;
+        this.nutrient = nutrient;
     }
 
-    public Ingredient(Long id, String name, Double amount, String picture, IngredientType type) {
+    public Ingredient(Long id, String name, Double amount, String picture, IngredientType type, List<Recipe> recipes, Nutrient nutrient) {
         this.id = id;
         this.name = name;
         this.amount = amount;
         this.picture = picture;
         this.type = type;
+        this.recipes = recipes;
+        this.nutrient = nutrient;
     }
 
     public Long getId() {
@@ -67,6 +84,22 @@ public class Ingredient {
         this.type = type;
     }
 
+    public List<Recipe> getRecipes() {
+        return recipes;
+    }
+
+    public void setRecipes(List<Recipe> recipes) {
+        this.recipes = recipes;
+    }
+
+    public Nutrient getNutrient() {
+        return nutrient;
+    }
+
+    public void setNutrient(Nutrient nutrient) {
+        this.nutrient = nutrient;
+    }
+
     @Override
     public String toString() {
         return "Ingredient{" +
@@ -75,6 +108,8 @@ public class Ingredient {
                 ", amount=" + amount +
                 ", picture='" + picture + '\'' +
                 ", type=" + type +
+                ", recipes=" + recipes +
+                ", nutrient=" + nutrient +
                 '}';
     }
 }
