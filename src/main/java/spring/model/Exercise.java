@@ -17,7 +17,7 @@ public class Exercise {
     private String duration;
     private String description;
     private String picture;
-    @ManyToMany(mappedBy = "exercise")
+    @ManyToMany
     private List<Measure> measures;
 
     public Exercise() {

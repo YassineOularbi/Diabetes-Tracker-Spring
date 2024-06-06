@@ -16,7 +16,7 @@ public class Ingredient {
     private String picture;
     @Enumerated(EnumType.STRING)
     private IngredientType type;
-    @ManyToMany(mappedBy = "ingredient")
+    @ManyToMany
     private List<Recipe> recipes;
     @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "nutrient_id")

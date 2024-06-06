@@ -15,7 +15,7 @@ public class Meal {
     @Enumerated(EnumType.STRING)
     private MealPhase phase;
     private String picture;
-    @ManyToMany(mappedBy = "meal")
+    @ManyToMany
     private List<Diabetic> diabetics;
     @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "recipe_id")

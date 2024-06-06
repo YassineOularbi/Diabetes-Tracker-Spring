@@ -12,6 +12,7 @@
     <list default="true" id="97ce2031-7033-4b4e-8954-c94a775eff77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/BRIEF-WEATHER-APP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/src/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controller/TestController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Magerama-cinema-BM/src/main/java/jee/javapack/servlets/CinemaHome.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../QUIZ-JAVA/QUIZ-JAVA.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../STUDENT-MANAGEMENT-SPRINGBOOT-ANGULAR" afterDir="false" />
@@ -71,33 +72,15 @@
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/config/PersistenceJPAConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Diabetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Diabetic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Exercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Ingredient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Meal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Measure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Medication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Cycling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Cycling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Running.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Running.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Swimming.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Swimming.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Walking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Walking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Yoga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/exercise/Yoga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Meat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/SeaFruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/SeaFruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Seed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Seed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Vegetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/ingredient/Vegetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/meal/Breakfast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/meal/Breakfast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/meal/Dinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/meal/Dinner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/meal/Lunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/meal/Lunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/measure/A1C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/measure/A1C.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/measure/BloodKetone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/measure/BloodKetone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/measure/Glycemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/measure/Glycemia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/measure/UrinaryKetone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/measure/UrinaryKetone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/measure/Weight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/measure/Weight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/medication/Insulin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/medication/Insulin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/medication/Pill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/medication/Pill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/medication/Syrup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/medication/Syrup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Recipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,9 +91,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
