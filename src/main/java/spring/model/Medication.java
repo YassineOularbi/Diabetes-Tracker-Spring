@@ -21,7 +21,7 @@ public class Medication {
     @Enumerated(EnumType.STRING)
     private MealPhase phase;
     private String picture;
-    @ManyToMany(mappedBy = "medication")
+    @ManyToMany
     private List<Measure> measures;
 
     public Medication() {

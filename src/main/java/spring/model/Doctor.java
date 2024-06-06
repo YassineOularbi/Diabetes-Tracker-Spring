@@ -16,7 +16,7 @@ public class Doctor {
     private String number;
     private String mail;
     private String picture;
-    @ManyToMany(mappedBy = "doctor")
+    @ManyToMany
     private List<Diabetic> diabetics;
 
     public Doctor() {

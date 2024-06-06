@@ -17,9 +17,9 @@ public class Diabetic {
     private String picture;
     @OneToMany(mappedBy = "diabetic", cascade = CascadeType.REMOVE)
     private List<Measure> measures;
-    @ManyToMany(mappedBy = "diabetic")
+    @ManyToMany(mappedBy = "diabetics")
     private List<Doctor> doctors;
-    @ManyToMany(mappedBy = "diabetic")
+    @ManyToMany(mappedBy = "diabetics")
     private List<Meal> meals;
 
     public Diabetic() {

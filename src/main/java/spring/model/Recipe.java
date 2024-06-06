@@ -12,7 +12,7 @@ public class Recipe {
     @OneToOne
     @JoinColumn(name = "meal_id")
     private Meal meal;
-    @ManyToMany(mappedBy = "recipe")
+    @ManyToMany(mappedBy = "recipes")
     private List<Ingredient> ingredients;
 
     public Recipe() {

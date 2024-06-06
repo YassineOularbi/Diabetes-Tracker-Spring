@@ -30,9 +30,9 @@ public class Measure {
     @ManyToOne
     @JoinColumn(name = "diabetic_id")
     private Diabetic diabetic;
-    @ManyToMany(mappedBy = "measure")
+    @ManyToMany(mappedBy = "measures")
     private List<Medication> medications;
-    @ManyToMany(mappedBy = "measure")
+    @ManyToMany(mappedBy = "measures")
     private List<Exercise> exercises;
 
     public Measure() {
