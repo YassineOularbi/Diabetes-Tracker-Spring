@@ -25,6 +25,13 @@ public class Ingredient {
     public Ingredient() {
     }
 
+    public Ingredient(String name, Double amount, String picture, IngredientType type) {
+        this.name = name;
+        this.amount = amount;
+        this.picture = picture;
+        this.type = type;
+    }
+
     public Ingredient(String name, Double amount, String picture, IngredientType type, List<Recipe> recipes, Nutrient nutrient) {
         this.name = name;
         this.amount = amount;
