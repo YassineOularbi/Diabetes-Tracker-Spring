@@ -22,6 +22,17 @@ public class Nutrient {
     public Nutrient() {
     }
 
+    public Nutrient(Double water, Double calorie, Double protein, Double fat, Double glucose, Double carb, String mineral, String vitamin) {
+        this.water = water;
+        this.calorie = calorie;
+        this.protein = protein;
+        this.fat = fat;
+        this.glucose = glucose;
+        this.carb = carb;
+        this.mineral = mineral;
+        this.vitamin = vitamin;
+    }
+
     public Nutrient(Double water, Double calorie, Double protein, Double fat, Double glucose, Double carb, String mineral, String vitamin, Ingredient ingredient) {
         this.water = water;
         this.calorie = calorie;
