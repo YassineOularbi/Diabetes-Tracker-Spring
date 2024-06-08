@@ -35,4 +35,9 @@ public class DoctorService {
         doctorRepository.findById(id).orElseThrow(DoctorNotFoundException::new);
         doctorRepository.deleteById(id);
     }
+
+    @Transactional
+    public long count(){
+        return doctorRepository.count();
+    }
 }

@@ -15,6 +15,11 @@ public class Fish extends Ingredient {
         this.setType(IngredientType.Fish);
     }
 
+    public Fish(String name, String picture) {
+        super(name, picture);
+        this.setType(IngredientType.Fish);
+    }
+
     public Fish(String name, Double amount, String picture, IngredientType type, List<Recipe> recipes, Nutrient nutrient) {
         super(name, amount, picture, type, recipes, nutrient);
         this.setType(IngredientType.Fish);

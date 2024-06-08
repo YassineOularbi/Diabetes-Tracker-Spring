@@ -15,7 +15,8 @@ public class Nutrient {
     private Double carb;
     private String mineral;
     private String vitamin;
-    @OneToOne(cascade = CascadeType.REMOVE)
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "ingredient_id")
     private Ingredient ingredient;
 
@@ -150,7 +151,6 @@ public class Nutrient {
                 ", carb=" + carb +
                 ", mineral='" + mineral + '\'' +
                 ", vitamin='" + vitamin + '\'' +
-                ", ingredient=" + ingredient +
                 '}';
     }
 }

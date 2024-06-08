@@ -16,13 +16,19 @@ public class Ingredient {
     private String picture;
     @Enumerated(EnumType.STRING)
     private IngredientType type;
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Recipe> recipes;
-    @OneToOne(cascade = CascadeType.REMOVE)
+
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "nutrient_id")
     private Nutrient nutrient;
 
     public Ingredient() {
+    }
+
+    public Ingredient(String name, String picture) {
+        this.name = name;
+        this.picture = picture;
     }
 
     public Ingredient(String name, Double amount, String picture, IngredientType type) {
@@ -115,8 +121,8 @@ public class Ingredient {
                 ", amount=" + amount +
                 ", picture='" + picture + '\'' +
                 ", type=" + type +
-                ", recipes=" + recipes +
-                ", nutrient=" + nutrient +
+                ", nutrient=" + nutrient.toString() +
                 '}';
     }
+
 }

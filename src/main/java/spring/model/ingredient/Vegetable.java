@@ -15,6 +15,11 @@ public class Vegetable extends Ingredient {
         this.setType(IngredientType.Vegetable);
     }
 
+    public Vegetable(String name, String picture) {
+        super(name, picture);
+        this.setType(IngredientType.Vegetable);
+    }
+
     public Vegetable(String name, Double amount, String picture, IngredientType type, List<Recipe> recipes, Nutrient nutrient) {
         super(name, amount, picture, type, recipes, nutrient);
         this.setType(IngredientType.Vegetable);

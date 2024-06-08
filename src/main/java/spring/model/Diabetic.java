@@ -15,9 +15,9 @@ public class Diabetic {
     private DiabeticType type;
     private Integer age;
     private String picture;
-    @OneToMany(mappedBy = "diabetic", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "diabetic", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     private List<Measure> measures;
-    @ManyToMany(mappedBy = "diabetics")
+    @ManyToMany(mappedBy = "diabetics", fetch = FetchType.LAZY)
     private List<Doctor> doctors;
     @ManyToMany(mappedBy = "diabetics")
     private List<Meal> meals;
@@ -118,9 +118,6 @@ public class Diabetic {
                 ", type=" + type +
                 ", age=" + age +
                 ", picture='" + picture + '\'' +
-                ", measures=" + measures +
-                ", doctors=" + doctors +
-                ", meals=" + meals +
                 '}';
     }
 }

@@ -106,7 +106,6 @@ public class Doctor {
                 ", number='" + number + '\'' +
                 ", mail='" + mail + '\'' +
                 ", picture='" + picture + '\'' +
-                ", diabetics=" + diabetics +
                 '}';
     }
 }
