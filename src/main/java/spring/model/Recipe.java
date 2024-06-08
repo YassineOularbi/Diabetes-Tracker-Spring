@@ -12,7 +12,7 @@ public class Recipe {
     @OneToOne
     @JoinColumn(name = "meal_id")
     private Meal meal;
-    @ManyToMany(mappedBy = "recipes")
+    @ManyToMany(mappedBy = "recipes", fetch = FetchType.EAGER)
     private List<Ingredient> ingredients;
 
     public Recipe() {

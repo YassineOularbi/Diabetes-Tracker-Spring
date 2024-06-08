@@ -35,4 +35,9 @@ public class DiabeticService {
         diabeticRepository.findById(id).orElseThrow(DiabeticNotFoundException::new);
         diabeticRepository.deleteById(id);
     }
+
+    @Transactional
+    public long count(){
+        return diabeticRepository.count();
+    }
 }
