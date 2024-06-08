@@ -26,4 +26,10 @@ public class MainController {
         model.addAttribute("countDiabetics", diabeticService.count());
         return "main";
     }
+
+    @GetMapping("/track")
+    public String profile(Model model){
+        model.addAttribute("diabetics", diabeticService.getAll());
+        return "profile";
+    }
 }

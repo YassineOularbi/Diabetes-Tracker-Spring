@@ -83,7 +83,7 @@
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn d-none d-sm-block" href="#appointment">Get Tracking</a>
+            <a class="cta-btn d-none d-sm-block" href="track">Get Tracking</a>
 
         </div>
 

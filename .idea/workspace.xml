@@ -12,6 +12,8 @@
     <list default="true" id="97ce2031-7033-4b4e-8954-c94a775eff77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/BRIEF-WEATHER-APP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/src/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profiles.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Magerama-cinema-BM/src/main/java/jee/javapack/servlets/CinemaHome.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../QUIZ-JAVA/QUIZ-JAVA.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../STUDENT-MANAGEMENT-SPRINGBOOT-ANGULAR" afterDir="false" />
@@ -70,6 +72,8 @@
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/jsp/update-student-form.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +133,7 @@
     "git-widget-placeholder": "front-end",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/ENAA-CHALLENGES-WORKSHOP-PROJECT/BRIEFS-ENAA-SIMPLONE/Diabetes-Tracker-Spring",
+    "last_opened_file_path": "C:/Users/user/Desktop/ENAA-CHALLENGES-WORKSHOP-PROJECT/BRIEFS-ENAA-SIMPLONE/Diabetes-Tracker-Spring/src/main/webapp/WEB-INF/views/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -140,6 +144,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\ENAA-CHALLENGES-WORKSHOP-PROJECT\BRIEFS-ENAA-SIMPLONE\Diabetes-Tracker-Spring\src\main\webapp\WEB-INF\views\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\ENAA-CHALLENGES-WORKSHOP-PROJECT\BRIEFS-ENAA-SIMPLONE\SPRING-GESTION-DES-ETUDIANTS\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\user\Desktop\ENAA-CHALLENGES-WORKSHOP-PROJECT\BRIEFS-ENAA-SIMPLONE\SPRING-GESTION-DES-ETUDIANTS\src\main\webapp\WEB-INF" />
@@ -256,6 +263,7 @@
       <workItem from="1716479034244" duration="2950000" />
       <workItem from="1716504757203" duration="3544000" />
       <workItem from="1717405633600" duration="3811000" />
+      <workItem from="1717849206433" duration="5195000" />
     </task>
     <servers />
   </component>
