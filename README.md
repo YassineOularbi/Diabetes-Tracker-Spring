@@ -1,4 +1,4 @@
-# Système de Gestion des Étudiants avec Spring Framework
+# Système de Gestion des diabetiques
 
 Ce projet est un système de gestion des étudiants développé avec le framework Spring pour l'école ENAA. Il permet aux administrateurs de gérer efficacement les dossiers des étudiants en incluant des fonctionnalités telles que l'ajout, la visualisation, la mise à jour et la suppression des étudiants.
 
@@ -15,13 +15,13 @@ Ce projet est un système de gestion des étudiants développé avec le framewor
 
 ## Fonctionnalités
 
-- **Visualiser les Étudiants :** Affichage d'une liste de tous les étudiants dans le système en utilisant une page JSP. Chaque entrée d'étudiant montre des informations de base telles que le nom, le numéro de matricule et l'e-mail.
+- **Visualiser les measues :** 
 
-- **Ajouter un Nouvel Étudiant :** Formulaire pour permettre aux administrateurs d'ajouter un nouvel étudiant au système. Validation des données pour garantir que les champs obligatoires sont remplis et que les formats de données appropriés sont utilisés.
+- **Ajouter un Nouvel measure :** 
 
-- **Mettre à Jour les Détails de l'Étudiant :** Possibilité de modifier les détails d'un étudiant existant, y compris le nom, le numéro de matricule, l'e-mail, le numéro de téléphone et l'adresse.
+- **Mettre à Jour les Détails de measures :** 
 
-- **Supprimer un Étudiant :** Option pour supprimer un étudiant du système.
+- **chart des measures :** 
 
 ## Technologies Utilisées
 
@@ -52,14 +52,14 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 ### Exemple de configuration :
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/student_db?serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost:3306/diabetes_db?serverTimezone=UTC
 spring.datasource.username=votre_nom_utilisateur_mysql
 spring.datasource.password=votre_mot_de_passe_mysql
 ````
 Lancez le projet en utilisant votre IDE ou en construisant le projet avec Maven et en le déployant sur un serveur Tomcat.
 
 ## Usage
-Une fois le projet lancé avec succès, accédez à l'URL de l'application (généralement [http://localhost:8082/SPRING_GESTION_DES_ETUDIANTS_war_exploded/]) pour commencer à utiliser le système de gestion des étudiants.
+Une fois le projet lancé avec succès, accédez à l'URL de l'application (généralement [http://localhost:8082/springmvc5_springdatajpa2_jsp_mysql_example_war_exploded/]) pour commencer à utiliser le système de gestion des étudiants.
 
 ## Auteurs
 Ce projet a été développé par Yassine OULARBI pour l'école ENAA.
