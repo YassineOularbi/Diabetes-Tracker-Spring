@@ -12,6 +12,9 @@
     <list default="true" id="97ce2031-7033-4b4e-8954-c94a775eff77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/BRIEF-WEATHER-APP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../BRIEF-WEATHER-APP/src/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/StringToDateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/StringToTimeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dashboard.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Magerama-cinema-BM/src/main/java/jee/javapack/servlets/CinemaHome.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../QUIZ-JAVA/QUIZ-JAVA.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../STUDENT-MANAGEMENT-SPRINGBOOT-ANGULAR" afterDir="false" />
@@ -70,6 +73,296 @@
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/jsp/update-student-form.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../hibernate/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Measure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/model/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/model/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/repository/measure/A1CRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/repository/measure/A1CRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/repository/measure/BloodKetoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/repository/measure/BloodKetoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/repository/measure/GlycemiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/repository/measure/GlycemiaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/repository/measure/WeightRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/repository/measure/WeightRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/measure/A1CService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/measure/A1CService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/measure/BloodKetoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/measure/BloodKetoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/measure/GlycemiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/measure/GlycemiaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/measure/WeightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/measure/WeightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dashboard/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/config/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/config/PersistenceJPAConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/DiabeticType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/DoctorType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/ExerciseType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/IngredientType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/MealPhase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/MealPhaseType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/MeasureType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/MedicationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/enums/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/DiabeticNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/DoctorNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/ExerciseNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/IngredientNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/MealNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/MeasureNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/MedicationNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/NutrientNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/exception/RecipeNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Diabetic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Doctor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Exercise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Ingredient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Meal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Measure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Medication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Nutrient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/Recipe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/exercise/Cycling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/exercise/Running.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/exercise/Swimming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/exercise/Walking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/exercise/Yoga.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/ingredient/Fish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/ingredient/Fruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/ingredient/Meat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/ingredient/SeaFruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/ingredient/Seed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/ingredient/Vegetable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/meal/Breakfast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/meal/Dinner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/meal/Lunch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/measure/A1C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/measure/BloodKetone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/measure/Glycemia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/measure/UrinaryKetone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/measure/Weight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/medication/Insulin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/medication/Pill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/model/medication/Syrup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/DiabeticRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/DoctorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ExerciseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/IngredientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/MealRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/MeasureRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/MedicationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/NutrientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/RecipeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/exercise/CyclingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/exercise/RunningRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/exercise/SwimmingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/exercise/WalkingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/exercise/YogaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ingredient/FishRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ingredient/FruitRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ingredient/MeatRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ingredient/SeaFruitRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ingredient/SeedRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/ingredient/VegetableRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/meal/BreakfastRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/meal/DinnerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/meal/LunchRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/measure/A1CRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/measure/BloodKetoneRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/measure/GlycemiaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/measure/UrinaryKetoneRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/measure/WeightRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/medication/InsulinRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/medication/PillRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/repository/medication/SyrupRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/DiabeticService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/DoctorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ExerciseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/IngredientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/MealService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/MeasureService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/MedicationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/NutrientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/RecipeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/exercise/CyclingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/exercise/RunningService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/exercise/SwimmingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/exercise/WalkingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/exercise/YogaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ingredient/FishService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ingredient/FruitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ingredient/MeatService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ingredient/SeaFruitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ingredient/SeedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/ingredient/VegetableService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/meal/BreakfastService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/meal/DinnerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/meal/LunchService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/measure/A1CService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/measure/BloodKetoneService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/measure/GlycemiaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/measure/UrinaryKetoneService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/measure/WeightService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/medication/InsulinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/medication/PillService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/service/medication/SyrupService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/config/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/config/PersistenceJPAConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/DiabeticType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/DoctorType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/ExerciseType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/IngredientType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/MealPhase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/MealPhaseType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/MeasureType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/MedicationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/enums/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/DiabeticNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/DoctorNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/ExerciseNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/IngredientNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/MealNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/MeasureNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/MedicationNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/NutrientNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/exception/RecipeNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Diabetic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Doctor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Exercise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Ingredient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Meal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Measure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Medication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Nutrient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/Recipe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/exercise/Cycling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/exercise/Running.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/exercise/Swimming.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/exercise/Walking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/exercise/Yoga.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/ingredient/Fish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/ingredient/Fruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/ingredient/Meat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/ingredient/SeaFruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/ingredient/Seed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/ingredient/Vegetable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/meal/Breakfast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/meal/Dinner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/meal/Lunch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/measure/A1C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/measure/BloodKetone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/measure/Glycemia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/measure/UrinaryKetone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/measure/Weight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/medication/Insulin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/medication/Pill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/model/medication/Syrup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/DiabeticRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/DoctorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ExerciseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/IngredientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/MealRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/MeasureRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/MedicationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/NutrientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/RecipeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/exercise/CyclingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/exercise/RunningRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/exercise/SwimmingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/exercise/WalkingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/exercise/YogaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ingredient/FishRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ingredient/FruitRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ingredient/MeatRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ingredient/SeaFruitRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ingredient/SeedRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/ingredient/VegetableRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/meal/BreakfastRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/meal/DinnerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/meal/LunchRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/measure/A1CRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/measure/BloodKetoneRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/measure/GlycemiaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/measure/UrinaryKetoneRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/measure/WeightRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/medication/InsulinRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/medication/PillRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/repository/medication/SyrupRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/DiabeticService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/DoctorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ExerciseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/IngredientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/MealService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/MeasureService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/MedicationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/NutrientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/RecipeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/exercise/CyclingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/exercise/RunningService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/exercise/SwimmingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/exercise/WalkingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/exercise/YogaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ingredient/FishService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ingredient/FruitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ingredient/MeatService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ingredient/SeaFruitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ingredient/SeedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/ingredient/VegetableService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/meal/BreakfastService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/meal/DinnerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/meal/LunchService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/measure/A1CService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/measure/BloodKetoneService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/measure/GlycemiaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/measure/UrinaryKetoneService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/measure/WeightService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/medication/InsulinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/medication/PillService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/classes/spring/service/medication/SyrupService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjrt-1.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/byte-buddy-1.6.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-5.2.17.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-5.2.17.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-5.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/jandex-2.0.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.22.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/standard-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/profile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc5-springdatajpa2-jsp-mysql-example-0.0.1-SNAPSHOT/WEB-INF/views/test.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +375,8 @@
         <option value="spring-beans.schema" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -129,7 +422,7 @@
     "git-widget-placeholder": "front-end",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/ENAA-CHALLENGES-WORKSHOP-PROJECT/BRIEFS-ENAA-SIMPLONE/Diabetes-Tracker-Spring",
+    "last_opened_file_path": "C:/Users/user/Desktop/ENAA-CHALLENGES-WORKSHOP-PROJECT/BRIEFS-ENAA-SIMPLONE/Diabetes-Tracker-Spring/src/main/webapp/WEB-INF/views/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -140,6 +433,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\ENAA-CHALLENGES-WORKSHOP-PROJECT\BRIEFS-ENAA-SIMPLONE\Diabetes-Tracker-Spring\src\main\webapp\WEB-INF\views\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\ENAA-CHALLENGES-WORKSHOP-PROJECT\BRIEFS-ENAA-SIMPLONE\SPRING-GESTION-DES-ETUDIANTS\src\main\webapp\WEB-INF\views" />
       <recent name="C:\Users\user\Desktop\ENAA-CHALLENGES-WORKSHOP-PROJECT\BRIEFS-ENAA-SIMPLONE\SPRING-GESTION-DES-ETUDIANTS\src\main\webapp\WEB-INF" />
@@ -256,6 +552,7 @@
       <workItem from="1716479034244" duration="2950000" />
       <workItem from="1716504757203" duration="3544000" />
       <workItem from="1717405633600" duration="3811000" />
+      <workItem from="1717849206433" duration="22584000" />
     </task>
     <servers />
   </component>

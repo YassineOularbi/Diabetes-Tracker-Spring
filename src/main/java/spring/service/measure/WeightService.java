@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import spring.exception.MeasureNotFoundException;
+import spring.model.Diabetic;
+import spring.model.measure.A1C;
 import spring.model.measure.Weight;
 import spring.repository.measure.WeightRepository;
 
@@ -18,6 +20,11 @@ public class WeightService {
     @Transactional
     public List<Weight> getAll(){
         return weightRepository.findAll();
+    }
+
+    @Transactional
+    public Weight getLast(Diabetic diabetic){
+        return weightRepository.findFirstByDiabeticOrderByDateDesc(diabetic);
     }
 
     @Transactional
