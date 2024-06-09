@@ -1,5 +1,6 @@
 package spring.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import spring.enums.MealPhase;
 import spring.enums.MealPhaseType;
 import spring.enums.MeasureType;
@@ -21,7 +22,10 @@ public class Measure {
     private MealPhaseType phaseType;
     @Enumerated(EnumType.STRING)
     private MealPhase phase;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date date;
+    @DateTimeFormat(pattern = "HH:mm")
     private Time hour;
     @Enumerated(EnumType.STRING)
     private MeasureType type;
@@ -164,9 +168,6 @@ public class Measure {
                 ", hour=" + hour +
                 ", type=" + type +
                 ", status=" + status +
-                ", diabetic=" + diabetic +
-                ", medications=" + medications +
-                ", exercises=" + exercises +
                 '}';
     }
 }

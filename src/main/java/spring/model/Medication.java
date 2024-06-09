@@ -111,7 +111,6 @@ public class Medication {
                 ", phaseType=" + phaseType +
                 ", phase=" + phase +
                 ", picture='" + picture + '\'' +
-                ", measures=" + measures +
                 '}';
     }
 }

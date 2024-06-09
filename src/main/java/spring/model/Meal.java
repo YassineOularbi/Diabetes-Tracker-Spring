@@ -96,8 +96,6 @@ public class Meal {
                 ", name='" + name + '\'' +
                 ", phase=" + phase +
                 ", picture='" + picture + '\'' +
-                ", diabetics=" + diabetics +
-                ", recipe=" + recipe +
                 '}';
     }
 }
